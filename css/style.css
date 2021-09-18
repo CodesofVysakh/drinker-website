@@ -189,42 +189,45 @@ header div.right ul li a {
 #products div.item div.right a { 
 
 }
-#products hr { 
 
+#about {
+	text-align: center;
+	padding-bottom: 50px;
+}
+#about h3 {
+	font-size: 60px;
+	font-weight: bolder;
+	margin-bottom: 50px;
+}
+#about h3 span {
+	color: red;
+	font-weight: bolder;
+}
+#about p {
+	margin-bottom: 30px;
+}
+#about a.button {
+	padding: 20px 35px;
+	background: #000;
+	display: inline-block;
+	color: #fff;
+	margin-bottom: 50px;
 }
 
-#about { 
-
+#testimonial {
+	text-align: center;
+	padding-bottom: 50px;
 }
-#about { 
-
+#testimonial section.wrapper{
+	width: 80%;
 }
-#about h3 { 
-
+#testimonial div.top {
+	margin: 50px 0 80px;
 }
-#about h3 span { 
-
-}
-#about p { 
-
-}
-#about a.button { 
-
-}
-#about hr { 
-
-}
-#testimonial { 
-
-}
-#testimonial { 
-
-}
-#testimonial div.top { 
-
-}
-#testimonial div.top h3 { 
-
+#testimonial div.top h3 {
+	font-size: 60px;
+	font-weight: bolder;
+	margin-bottom: 20px;
 }
 #testimonial div.top p { 
 
@@ -232,76 +235,78 @@ header div.right ul li a {
 #testimonial div.bottom { 
 
 }
-#testimonial div.bottom div.item { 
+#testimonial div.bottom div.item {
 
 }
-#testimonial div.bottom div.item div.left { 
+#testimonial div.bottom div.item div.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#testimonial div.bottom div.item div.left {
+	width: 20%;
+}
+#testimonial div.bottom div.item div.card div.left img { 
 
 }
-#testimonial div.bottom div.item div.left img { 
+#testimonial div.bottom div.item div.card div.right {
+	width: 65%;
+	text-align: left;
+	margin-left: 35px;
+}
+#testimonial div.bottom div.item div.card div.right h6 {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+#testimonial div.bottom div.item div.card div.right p { 
 
 }
-#testimonial div.bottom div.item div.right { 
-
-}
-#testimonial div.bottom div.item div.right h6 { 
-
-}
-#testimonial div.bottom div.item div.right p { 
-
-}
-#testimonial hr { 
-
+#testimonial hr {
+	margin-top: 50px;
 }
 
 #message { 
-
+	padding-bottom: 50px;
 }
-
-#message { 
-
+#message section.wrapper { 
+	display: flex;
+	justify-content: space-between;
 }
-
-#message div.left { 
-
+#message div.left {
+	width: 48%;
 }
-
-#message div.left h3 { 
-
+#message div.left h3 {
+	font-size: 40px;
+	font-weight: bolder;
+	margin-bottom: 25px;
 }
-
-#message div.left p { 
-
+#message div.left p {
+	margin-bottom: 25px;
 }
-
-#message div.left span.msg { 
-
+#message div.left span.msg {
+	font-size: 40px;
+	font-weight: bolder;
+	color: #1C2C40;
 }
-
-#message div.right { 
-
+#message div.right {
+	width: 48%;
 }
-
 #message div.right form { 
 
 }
-
 #message div.right form input { 
 
 }
-
 #message div.right form textarea { 
 
 }
-
 #message hr { 
-
+	margin-top: 50px;
 }
 
 footer { 
 
 }
-
 footer span { 
 
 }
