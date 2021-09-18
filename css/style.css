@@ -1,0 +1,307 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+    margin: 0 auto;
+	font-weight: 400;
+	height: 100vh;
+    background: url(../images/body_bg.png) no-repeat center center;
+    background-size: cover;
+}
+input,textarea,select{
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 18px;
+	font-family:  Arial;
+	font-weight: 400;
+	color: #8d8d8f;
+}
+small,span {
+	font-family:  Arial;
+	color: #8d8d8f;
+}
+.hidden{
+	display:none;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+hr { 
+	border-bottom: 2px solid #000;
+	width: 100%;
+}
+
+header {
+	padding: 60px 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header div.left { 
+
+}
+
+header div.left h1 {
+	width: 180px;
+}
+
+header div.left h1 a { 
+
+}
+
+header div.left h1 a img { 
+	display: block;
+	width: 100%;
+}
+
+header div.right { 
+	width: 30%;
+}
+
+header div.right ul { 
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+header div.right ul li:last-child { 
+	margin-left: 35px;
+}
+
+header div.right ul li a { 
+
+}
+
+#spotlight { 
+
+}
+#spotlight section.wrapper { 
+	text-align: center;
+}
+#spotlight div.image-container {
+	width: 75%;
+	margin: 0 auto;
+	padding: 30px 0 10px;
+}
+#spotlight div.image-container img { 
+
+}
+#spotlight h5 {
+	font-size: 70px;
+	font-weight: bolder;
+	margin-bottom: 50px;
+}
+#spotlight a.button {
+	padding: 20px 35px;
+	background: #000;
+	color: #fff;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+#products {
+	padding: 50px 0;
+}
+#products div.top {
+	padding: 50px 0;
+	text-align: center;
+}
+#products div.top h3 {
+	font-size: 60px;
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+#products div.top h3 span {
+	font-weight: bolder;
+	color: red;
+}
+#products div.top p { 
+
+}
+#products div.item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+#products div.item div.left {
+	width: 30%;
+	box-shadow: 1px 1px 25px #bbb;
+}
+#products div.item div.left img { 
+
+}
+#products div.item div.right {
+	width: 65%;
+	margin-left: 30px;
+}
+#products div.item div.right h5 {
+	font-size: 40px;
+	font-weight: bolder;
+	margin-bottom: 25px;
+}
+#products div.item div.right p {
+	margin-bottom: 25px;
+}
+#products div.item div.right a { 
+
+}
+#products hr { 
+
+}
+
+#about { 
+
+}
+#about { 
+
+}
+#about h3 { 
+
+}
+#about h3 span { 
+
+}
+#about p { 
+
+}
+#about a.button { 
+
+}
+#about hr { 
+
+}
+#testimonial { 
+
+}
+#testimonial { 
+
+}
+#testimonial div.top { 
+
+}
+#testimonial div.top h3 { 
+
+}
+#testimonial div.top p { 
+
+}
+#testimonial div.bottom { 
+
+}
+#testimonial div.bottom div.item { 
+
+}
+#testimonial div.bottom div.item div.left { 
+
+}
+#testimonial div.bottom div.item div.left img { 
+
+}
+#testimonial div.bottom div.item div.right { 
+
+}
+#testimonial div.bottom div.item div.right h6 { 
+
+}
+#testimonial div.bottom div.item div.right p { 
+
+}
+#testimonial hr { 
+
+}
+
+#message { 
+
+}
+
+#message { 
+
+}
+
+#message div.left { 
+
+}
+
+#message div.left h3 { 
+
+}
+
+#message div.left p { 
+
+}
+
+#message div.left span.msg { 
+
+}
+
+#message div.right { 
+
+}
+
+#message div.right form { 
+
+}
+
+#message div.right form input { 
+
+}
+
+#message div.right form textarea { 
+
+}
+
+#message hr { 
+
+}
+
+footer { 
+
+}
+
+footer span { 
+
+}
