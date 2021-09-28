@@ -25,10 +25,9 @@ body {
 	min-width: 320px;
     margin: 0 auto;
 	font-weight: 400;
-	height: 100vh;
-    background: url(../images/body_bg.png) no-repeat center center;
-    background-size: cover;
+	background: #1C2C40;
 }
+
 input,textarea,select{
 	font-family:  Arial, Helvetica, sans-serif;
 	font-weight: 400;
@@ -73,11 +72,40 @@ hr {
 	width: 100%;
 }
 
+header div.right div.top-right {
+	position: absolute;
+	top: 0;
+	right: -27px;
+	z-index: -2;
+	width: 280px;
+	transform-origin: center;
+  	transition: transform 0.5s ease-in-out;
+}
+header div.right div.top-right.active {
+	transform: rotate(-15deg);
+	right: -27px;
+}
+header div.right div.top-right img {
+
+}
+
+#body-content {
+	transform-origin: top right;
+  	transition: transform 0.5s linear;
+	background: url(../images/body_bg.png) no-repeat center center;
+	background-size: cover;
+}
+
+#body-content.active {
+	transform: rotate(15deg);
+}
+
 header {
-	padding: 60px 80px;
+	padding: 40px 80px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
 header div.left { 
@@ -85,7 +113,7 @@ header div.left {
 }
 
 header div.left h1 {
-	width: 180px;
+	width: 125px;
 }
 
 header div.left h1 a { 
@@ -93,26 +121,77 @@ header div.left h1 a {
 }
 
 header div.left h1 a img { 
-	display: block;
-	width: 100%;
+
 }
 
 header div.right { 
 	width: 30%;
+	z-index: 2;
 }
 
-header div.right ul { 
+header div.right div.main ul { 
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
 
-header div.right ul li:last-child { 
+header div.right div.main ul li:last-child { 
 	margin-left: 35px;
 }
 
-header div.right ul li a { 
-
+header div.right div.main ul li a {
+	font-size: 14px;
+	color: #fff;
+}
+header div.right div.menu {
+	display: none;
+	width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: -200px;
+    right: -250px;
+	filter: brightness(0) invert(1);
+	transform-origin: center;
+  	transition: transform 0.5s ease-in-out;
+}
+header div.right div.menu.active {
+	transform: rotate(45deg);
+}
+header div.right div.menu img {
+	width: 30px;
+}
+header div.right div.menu img.open {
+	position: absolute;
+	bottom: 135px;
+    left: 80px;
+}
+header div.right div.menu img.close {
+	width: 25px;
+	position: absolute;
+	bottom: 75px;
+    left: 175px;
+	transform: rotate(30deg);
+}
+header div.right div.menu-items {
+	text-align: end;
+	position: absolute;
+	top: 500px;
+    right: -90px;
+	transition: 0.5s ease-in-out;
+}
+header div.right div.menu-items.active {
+	right: -125px;
+	transform: rotate(-15deg);
+}
+header div.right div.menu-items ul {
+	display: none;	
+}
+header div.right div.menu-items ul li{
+	margin-bottom: 10px;
+}
+header div.right div.menu-items ul li a{
+	color: #fff;
 }
 
 #spotlight { 
@@ -130,12 +209,12 @@ header div.right ul li a {
 
 }
 #spotlight h5 {
-	font-size: 70px;
+	font-size: 50px;
 	font-weight: bolder;
 	margin-bottom: 50px;
 }
 #spotlight a.button {
-	padding: 20px 35px;
+	padding: 20px 50px;
 	background: #000;
 	color: #fff;
 	display: inline-block;
@@ -150,13 +229,13 @@ header div.right ul li a {
 	text-align: center;
 }
 #products div.top h3 {
-	font-size: 60px;
+	font-size: 45px;
 	font-weight: bolder;
 	margin-bottom: 20px;
 }
 #products div.top h3 span {
 	font-weight: bolder;
-	color: red;
+	color: #f00;
 }
 #products div.top p { 
 
@@ -179,7 +258,7 @@ header div.right ul li a {
 	margin-left: 30px;
 }
 #products div.item div.right h5 {
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: bolder;
 	margin-bottom: 25px;
 }
@@ -187,7 +266,7 @@ header div.right ul li a {
 	margin-bottom: 25px;
 }
 #products div.item div.right a { 
-
+	font-weight: 600;
 }
 
 #about {
@@ -195,12 +274,12 @@ header div.right ul li a {
 	padding-bottom: 50px;
 }
 #about h3 {
-	font-size: 60px;
+	font-size: 45px;
 	font-weight: bolder;
 	margin-bottom: 50px;
 }
 #about h3 span {
-	color: red;
+	color: #f00;
 	font-weight: bolder;
 }
 #about p {
@@ -225,7 +304,7 @@ header div.right ul li a {
 	margin: 50px 0 80px;
 }
 #testimonial div.top h3 {
-	font-size: 60px;
+	font-size: 45px;
 	font-weight: bolder;
 	margin-bottom: 20px;
 }
@@ -266,17 +345,17 @@ header div.right ul li a {
 }
 
 #message { 
-	padding-bottom: 50px;
+	position: relative;
 }
 #message section.wrapper { 
 	display: flex;
 	justify-content: space-between;
 }
 #message div.left {
-	width: 48%;
+	width: 51%;
 }
 #message div.left h3 {
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: bolder;
 	margin-bottom: 25px;
 }
@@ -284,9 +363,12 @@ header div.right ul li a {
 	margin-bottom: 25px;
 }
 #message div.left span.msg {
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: bolder;
 	color: #1C2C40;
+	display: block;
+	width: 100%;
+	text-size-adjust: auto;
 }
 #message div.right {
 	width: 48%;
@@ -295,18 +377,248 @@ header div.right ul li a {
 
 }
 #message div.right form input { 
+	display: block;
+	padding: 12px 0;
+	border-bottom: 2px solid #a6a4a4;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#message div.right form input::placeholder { 
+	font-size: 14px;
+	font-weight: 600;
+}
+#message div.right form input[type=text] { 
 
 }
-#message div.right form textarea { 
+#message div.right form input[type=number] { 
 
+}
+#message div.right form input[type=email] { 
+
+}
+#message div.right form input[type=submit] { 
+	border-bottom: none;
+	display: block;
+	background-color: #000;
+	padding: 12px 20px;
+	color: #fff;
+	width: 25%;
+    margin: 30px auto 0;
+    font-size: 16px;	
+}
+#message div.right form textarea { 
+	display: block;
+	padding: 12px 0;
+	border-bottom: 2px solid #a6a4a4;
+	width: 100%;
+}
+#message div.right form textarea::placeholder {
+	font-size: 14px;
+	font-weight: 600;
 }
 #message hr { 
 	margin-top: 50px;
 }
-
-footer { 
+#message div.bottom-left {
+	width: 60px;
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+}
+#message div.bottom.left img {
 
 }
+
+footer { 
+	text-align: center;
+	padding: 30px 10px;
+}
 footer span { 
+	color: #1C2C40;
+	font-weight: 600;
+}
+
+@media all and (max-width: 1080px) {
+	header {
+		padding: 40px;
+	}
+	header div.right div.top-right {
+		width: 260px;
+	}
+	#message div.left span.msg {
+		font-size: 30px;
+	}
+}
+
+@media all and (max-width: 980px) {
+	p {
+		font-size: 16px;
+	}
+	header div.right div.top-right {
+		width: 220px;
+	}
+	header {
+		padding: 40px 20px;
+	}
+	#spotlight h5 {
+		font-size: 35px;
+	}
+	#spotlight a.button {
+		padding: 16px 40px;
+	}
+	#products div.top h3 {
+		font-size: 35px;
+	}
+	#products div.item div.right h5 {
+		font-size: 25px;
+	}
+	#about h3 {
+		font-size: 35px;
+	}
+	#about a.button {
+		padding: 16px 35px;
+	}
+	#testimonial div.top h3 {
+		font-size: 35px;
+	}
+	#message div.right form input[type=submit] {
+		width: 30%;
+	}
+	#message div.bottom-left {
+		bottom: -60px;
+	}
+	#message div.left h3 {
+		font-size: 30px;
+	}
+	#message div.left span.msg {
+		font-size: 23px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	header div.right div.main ul li:last-child {
+		margin-left: 20px;
+	}
+	header div.right div.top-right {
+		width: 200px;
+	}
+	#products div.item {
+		flex-direction: column;
+	}
+	#products div.item div.left {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	#products div.item div.right {
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+	}
+	#testimonial div.top {
+		margin: 0 0 50px;
+	}
+	#testimonial div.bottom div.item div.card {
+		flex-direction: column;
+	}
+	#testimonial div.bottom div.item div.left {
+		width: 35%;
+		margin-bottom: 10px;
+	}
+	#testimonial div.bottom div.item div.card div.right {
+		width: 100%;
+		margin-left: 0;
+		text-align: center;
+	}
+	#message section.wrapper {
+		flex-direction: column;
+	}
+	#message div.left {
+		width: 100%;
+	}
+	#message div.right {
+		width: 100%;
+	}
+	#message div.left span.msg br {
+		display: none;
+	}
+	#message div.left span.msg {
+		margin-bottom: 15px;
+	}
+}
+
+@media all and (max-width: 640px) {
+	header div.right div.top-right {
+		width: 175px;
+	}
+	header div.right div.main ul {
+		display: none;
+	}
+	header div.right div.menu {
+		display: block;
+	}
+	header div.right div.menu-items ul {
+		display: block;
+	}
+	#message div.bottom-left {
+		bottom: -45px;
+	}
+	#testimonial .slick-prev, #testimonial .slick-next {
+		top: auto;
+		bottom: -100px;
+	}
+	#testimonial .slick-prev {
+		left: 0;
+	}
+	#testimonial .slick-next {
+		right: 0;
+	}
+	#testimonial hr {
+		margin-top: 100px;
+	}
+	footer {
+		padding: 30px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	p {
+		font-size: 14px;
+	}
+	header div.left h1 {
+		width: 100px;
+	}
+	header div.right div.top-right {
+		width: 140px;
+	}
+	header div.right div.menu {
+		padding: 4px;
+	}
+	#spotlight h5 {
+		font-size: 26px;
+		margin-bottom: 30px;
+	}
+	#spotlight a.button {
+		padding: 12px 26px;
+		font-size: 14px;
+	}
+	#products div.top {
+		padding: 0 0 50px;
+	}
+	#products div.top h3 {
+		font-size: 26px;
+	}
+	#about a.button {
+		padding: 12px 26px;
+		font-size: 14px;
+	}
+	#message div.bottom-left {
+		bottom: -30px;
+	}
+	#message div.bottom-left {
+		width: 45px;
+	}
+	#message div.right form input[type=submit] {
+		width: 35%;
+	}
 
 }
